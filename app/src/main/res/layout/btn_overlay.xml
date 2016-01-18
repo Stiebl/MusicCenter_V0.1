@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="50dp"
+    android:id="@+id/music_btns_ol">
+
+
+    <ImageButton android:id="@+id/btn_restore_ol"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="fitCenter"
+        android:onClick="restoreMainActivity"
+        android:src="@android:drawable/ic_input_get"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_restore_ol"
+        android:layout_centerInParent="true">
+
+        <ImageButton android:id="@+id/btn_prev_ol"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="-4dp"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_media_previous"/>
+        <ImageButton android:id="@+id/btn_play_ol"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="-4dp"
+            android:src="@android:drawable/ic_media_play"/>
+        <ImageButton android:id="@+id/btn_next_ol"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="-4dp"
+            android:layout_marginRight="2dp"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_media_next"/>
+    </LinearLayout>
+
+</RelativeLayout>

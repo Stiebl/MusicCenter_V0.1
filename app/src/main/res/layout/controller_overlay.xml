@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:minWidth="150dp">
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:id="@+id/youtube_ol"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:layout_margin="20dp" />
+
+    <VideoView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/video_ol"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:id="@+id/cover_ol"
+        android:src="@android:drawable/ic_menu_gallery"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible"/>
+
+    <include layout="@layout/btn_overlay"
+        android:layout_below="@id/cover_ol"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

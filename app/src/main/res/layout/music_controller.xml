@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+
+    <LinearLayout android:id="@+id/music_btns"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton android:id="@+id/btn_prev"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_previous"
+            android:onClick="prev"/>
+        <ImageButton android:id="@+id/btn_play"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_play"
+            android:onClick="play"/>
+        <ImageButton android:id="@+id/btn_next"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_media_next"
+            android:onClick="next" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/music_btns">
+
+        <TextView android:id="@+id/curTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="00:00"/>
+
+
+        <TextView android:id="@+id/endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="00:00"/>
+
+        <SeekBar android:id="@+id/progress"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/curTime"
+            android:layout_toLeftOf="@+id/endTime"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
